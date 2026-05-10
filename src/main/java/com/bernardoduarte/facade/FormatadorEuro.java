@@ -1,4 +1,4 @@
-package com.bernardoduarte.chainofresponsability;
+package com.bernardoduarte.facade;
 
 public class FormatadorEuro extends FormatadorEncadeado {
 

@@ -1,13 +1,13 @@
-package com.bernardoduarte.chainofresponsability;
+package com.bernardoduarte.facade;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChainOfResponsabilityApplication {
+public class FacadeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChainOfResponsabilityApplication.class, args);
+		SpringApplication.run(FacadeApplication.class, args);
 	}
 
 }
