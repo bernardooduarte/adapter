@@ -1,4 +1,4 @@
-package com.bernardoduarte.facade;
+package com.bernardoduarte.visitor;
 
 public class FormatadorRealBrasileiro extends FormatadorEncadeado {
 

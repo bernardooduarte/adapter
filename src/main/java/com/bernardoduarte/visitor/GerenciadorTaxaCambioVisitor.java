@@ -1,16 +1,17 @@
-package com.bernardoduarte.facade;
+package com.bernardoduarte.visitor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GerenciadorTaxaCambioFacade {
+public class GerenciadorTaxaCambioVisitor {
 
 	private final List<TaxaCambio> taxas = new ArrayList<>();
 	private final Map<String, TaxaCambioFactory> fabricas = new HashMap<>();
+	private final ExibicaoTaxaCambioVisitor visitorExibicao = new ExibicaoTaxaCambioVisitor();
 
-	public GerenciadorTaxaCambioFacade() {
+	public GerenciadorTaxaCambioVisitor() {
 		fabricas.put("USD", new DolarAmericanoFactory());
 		fabricas.put("EUR", new EuroFactory());
 		fabricas.put("GBP", new LibraEsterlinaFactory());
@@ -38,9 +39,9 @@ public class GerenciadorTaxaCambioFacade {
 	}
 
 	public void exibirPainel() {
-		System.out.println("=== Gerenciador de Taxa de Cambio (Facade) ===");
+		System.out.println("=== Gerenciador de Taxa de Cambio (Visitor) ===");
 		for (TaxaCambio taxa : taxas) {
-			taxa.exibirInfo();
+			System.out.println(taxa.aceitar(visitorExibicao));
 		}
 		System.out.println("=============================================");
 	}

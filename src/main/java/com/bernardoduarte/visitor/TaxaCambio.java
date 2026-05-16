@@ -1,4 +1,4 @@
-package com.bernardoduarte.facade;
+package com.bernardoduarte.visitor;
 
 public abstract class TaxaCambio {
 
@@ -28,7 +28,9 @@ public abstract class TaxaCambio {
 		this.formatador = formatador;
 	}
 
-	public void exibirInfo() {
-		System.out.println("Moeda: " + moeda + " | Taxa: " + formatador.formatar(valorEmReais));
+	public String getValorFormatado() {
+		return formatador.formatar(valorEmReais);
 	}
+
+	public abstract String aceitar(TaxaCambioVisitor visitor);
 }
