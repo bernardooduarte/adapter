@@ -1,1 +1,1 @@
-# Padr�o Adapter    
+﻿# Padrão Adapter
