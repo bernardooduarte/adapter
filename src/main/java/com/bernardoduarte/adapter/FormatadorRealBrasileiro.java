@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 public class FormatadorRealBrasileiro extends FormatadorEncadeado {
 
@@ -11,3 +11,4 @@ public class FormatadorRealBrasileiro extends FormatadorEncadeado {
 		return "R$ " + formatadorInterno.formatar(valor);
 	}
 }
+

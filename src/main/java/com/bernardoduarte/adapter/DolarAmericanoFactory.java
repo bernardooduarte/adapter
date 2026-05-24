@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 public class DolarAmericanoFactory extends TaxaCambioFactory {
 	@Override
@@ -11,3 +11,4 @@ public class DolarAmericanoFactory extends TaxaCambioFactory {
 		return new FormatadorDolarAmericano(new FormatadorBase());
 	}
 }
+

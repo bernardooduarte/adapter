@@ -1,13 +1,13 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VisitorApplication {
+public class AdapterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VisitorApplication.class, args);
+		SpringApplication.run(AdapterApplication.class, args);
 	}
 
 }

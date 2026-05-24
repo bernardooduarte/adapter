@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 public abstract class FormatadorEncadeado extends FormatadorValor {
 
@@ -8,3 +8,4 @@ public abstract class FormatadorEncadeado extends FormatadorValor {
 		this.formatadorInterno = formatadorInterno;
 	}
 }
+

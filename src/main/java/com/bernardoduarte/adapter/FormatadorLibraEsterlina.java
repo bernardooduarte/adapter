@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 public class FormatadorLibraEsterlina extends FormatadorEncadeado {
 
@@ -11,3 +11,4 @@ public class FormatadorLibraEsterlina extends FormatadorEncadeado {
 		return "GBP " + formatadorInterno.formatar(valor);
 	}
 }
+

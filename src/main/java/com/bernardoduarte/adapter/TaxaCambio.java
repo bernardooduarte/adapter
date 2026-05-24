@@ -1,6 +1,6 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
-public abstract class TaxaCambio {
+public class TaxaCambio {
 
 	protected String moeda;
 	protected double valorEmReais;
@@ -31,6 +31,5 @@ public abstract class TaxaCambio {
 	public String getValorFormatado() {
 		return formatador.formatar(valorEmReais);
 	}
-
-	public abstract String aceitar(TaxaCambioVisitor visitor);
 }
+

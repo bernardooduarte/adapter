@@ -1,4 +1,4 @@
-package com.bernardoduarte.visitor;
+package com.bernardoduarte.adapter;
 
 public class EuroFactory extends TaxaCambioFactory {
 	@Override
@@ -11,3 +11,4 @@ public class EuroFactory extends TaxaCambioFactory {
 		return new FormatadorEuro(new FormatadorBase());
 	}
 }
+
